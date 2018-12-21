@@ -7,7 +7,7 @@ constructor(){
     super();
     this.state = {
         tarefas: [],
-        inputTarefa: " "
+        inputTarefa: ""
     };
 
     this.addTarefa = (evento) => {
