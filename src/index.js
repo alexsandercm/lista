@@ -97,13 +97,13 @@ class ListaViewItem extends React.Component {
             this.setState({edit: false});
         }
 
-        this.onChange = (ev) => {
-            this.setState({texto: ev.target.value});
+        this.onChange = (evento) => {
+            this.setState({texto: evento.target.value});
         }
     }
 
     render() {
-        if(this.state.edit){
+        if(!this.state.edit){
             return(
                 <p>
                     {this.props.index+1} - {this.props.tarefa} -
